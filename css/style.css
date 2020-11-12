@@ -8,6 +8,10 @@ body {
   font-family: 'Roboto';
 }
 
+h2 {
+  margin-bottom: 25px;
+}
+
 /* Utility CSS */
 
 .inline {
@@ -38,9 +42,12 @@ body {
 
 .content {
   width: 100vw;
+  height: 100%;
+  min-width: 1500px;
   max-width: 100%;
-  padding: 0 5%;
+  padding: 0 8%;
   margin: auto;
+  position: relative;
 }
 
 .submit{
@@ -57,11 +64,12 @@ body {
   text-transform: uppercase;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fix-band li {
   vertical-align: middle;
+  display: inline-block;
   height: 90px;
   line-height: 90px;
 }
@@ -72,7 +80,7 @@ body {
   bottom: 5px;
 }
 
-.menu .inline, .form a  {
+.menu li, .form a  {
   margin: 0 10px;
 }
 
@@ -102,9 +110,6 @@ body {
   padding-top: 120px;
   color: #FFF;
   overflow: hidden;
-}
-
-.top-band {
   position: relative;
 }
 
@@ -116,9 +121,12 @@ body {
 }
 
 .slogan {
-  width: 550px;
+  padding: 10% 0;
+}
+
+.slogan h2 {
+  width: 40%;
   font-size: 45px;
-  margin: 40px 0;
 }
 
 .picture {
@@ -139,24 +147,19 @@ body {
   height: 100%;
 }
 
-.sub-band>.content h2 {
-  margin-bottom: 15px;
-}
-
 .main-band {
   background: #FFF;
 }
 
 .main-band> * {
-  height: 50vh;
   text-align: center;
 }
 
 .main-band:nth-last-of-type(2) .box {
-  width: calc(100% / 3 - 43px);
-  height: 350px;
-  margin: 20px;
-  vertical-align: top;
+  width: calc(100% / 3);
+  padding: 25px;
+  margin: 4% auto;
+  list-style: none;
 }
 
 .main-band:nth-last-of-type(2) .box>img {
@@ -180,5 +183,6 @@ body {
 .main-band:last-of-type .box {
   width: calc(100% / 2 - 3px);
   height: 100%;
-  background: red;
+  padding: 0 50px;
+  text-align: left;
 }
