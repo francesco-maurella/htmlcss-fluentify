@@ -4,103 +4,119 @@
     <meta charset="utf-8">
     <title>HTML/CSS - LAYOUT [Fluently]</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <div class="container">
 
-      <!--
-      - - - - - - - - - - TOP - - - - - - - - - -
-      -->
-      <header>
-        <!-- NAVBAR -->
-        <nav class="navbar">
+      <!--    TOP SIDE    -->
+      <header class="fix-band">
+        <section class="content clear">
+          <div class="logo float-l">
+            <img src="img/01-logo.svg" alt="Fluently Logo">
+          </div>
+          <nav class="menu float-l">
+            <ul>
+              <li class="inline"><a href="#">Il metodo</a></li>
+              <li class="inline"><a href="#">La tecnologia</a></li>
+              <li class="inline"><a href="#">Real-life English</a></li>
+              <li class="inline"><a href="#">Soluzioni aziendali</a></li>
+            </ul>
+          </nav>
+          <div class="form float-r">
+            <a href="#">Diventa un Tutor</a>
+            <a href="#">Login</a>
+            <a href="#" class="submit">Struttura un piano</a>
+          </div>
+        </section>
+      </header>
+      <!--  / TOP SIDE  -->
 
-        </nav>
-        <!-- / NAVBAR -->
-
-        <!-- INTESTAZIONE -->
-        <section class="head-content side-padd">
-          <!-- Titolo Intestazione -->
-          <div>
-            <div>
+      <!--   MIDDLE SIDE   -->
+      <main>
+        <!-- PRIMA VIEW -->
+        <!-- Titolo Intestazione -->
+        <section class="top-band">
+          <div class="content">
+            <div class="slogan">
               Scegli l'inglese studiato per i professionisti
             </div>
             <div>
-              Struttura un piano
+              <a href="#" class="submit">Struttura un piano</a>
             </div>
+            <img src="img/02-head.png" alt="Sponsor">
           </div>
-          <!-- / Titolo Intestazione -->
-
-          <!-- Sottotitolo Intestazione -->
-          <div class="band side-padd">
-            <div>
-              Le scuole di lingua tradizionali non sono efficaci
-            </div>
-            <div>
-              Solo un corso incentrato sulla fluency può portare ad una soluzione definitiva concreta.
-            </div>
-          </div>
-          <!-- / Sottotitolo Intestazione -->
         </section>
-        <!-- / INTESTAZIONE -->
+        <!-- / Titolo Intestazione -->
 
-      </header>
-      <!--
-      - - - - - - - - - - / TOP - - - - - - - - - -
-      -->
+        <!-- Sottotitolo Intestazione -->
+        <section class="sub-band">
+          <div class="content">
+            <div class="centering">
+              <div>
+                Le scuole di lingua tradizionali non sono efficaci
+              </div>
+              <div>
+                Solo un corso incentrato sulla fluency può portare ad una soluzione definitiva concreta.
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / Sottotitolo Intestazione -->
+        <!-- / PRIMA VIEW -->
 
-
-      <!--
-      - - - - - - - - - - MIDDLE - - - - - - - - - -
-      -->
-      <main class="body-content side-padd">
+        <!-- SECONDA VIEW -->
         <!-- Sezione 1-->
-        <ul>
-          <li class="box inline">
-            <div>Piano formativo configurato sul proprio livello</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-          </li>
-          <li class="box inline">
-            <div>Piano formativo configurato sul proprio livello</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-          </li>
-          <li class="box inline">
-            <div>Piano formativo configurato sul proprio livello</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-          </li>
-        </ul>
+        <section class="main-band">
+          <div class="content clean">
+            <ul>
+              <li class="box inline">
+                <img src="img/computer.svg">
+                <h2>Piano formativo configurato sul proprio livello</h2>
+                <div class="line"></div>
+                <div>Un metodo improntato sullo speaking con percorsi basati esattamente sulle esigenze personali dei partecipanti.Tutto parte da un accurato test di partenza per definire il livello e impostare gli obiettivi da raggiungere.</div>
+              </li>
+              <li class="box inline">
+                <img src="img/computer.svg">
+                <h2>Affiancamento costante del tutor</h2>
+                <div class="line"></div>
+                <div>Scopri il syllabus, la guida per il tuo percorso. Scegli gli argomenti per passare al livello successivo e affrontali con i tutor nelle sessioni one-to-one.</div>
+              </li>
+              <li class="box inline">
+                <img src="img/computer.svg">
+                <h2>Monitora i tuoi progressi costantemente</h2>
+                <div class="line"></div>
+                <div>Controlla i tuoi progressi con i dati elaborati dal nostro sistema. Hai pieno controllo su miglioramenti e obiettivi raggiunti.</div>
+              </li>
+            </ul>
+          </div>
+        </section>
         <!-- / Sezione 1-->
 
         <!-- Sezione 2-->
-        <section>
-          <div class="box inline">
-            Immagine
+        <section class="main-band">
+          <div class="content">
+            <div class="box inline">
+              Immagine
+            </div>
+            <div class="box inline">
+              Scopri il tuo livello iniziale e struttura un piano personalizzato
+            </div>
           </div>
-
-          <div class="box inline">
-            Scopri il tuo livello iniziale e struttura un piano personalizzato
-
-          </div>
-
         </section>
         <!-- / Sezione 2-->
+        <!-- / SECONDA VIEW -->
       </main>
-      <!--
-      - - - - - - - - - - / MIDDLE - - - - - - - - - -
-      -->
+      <!--  / MIDDLE SIDE  -->
 
-      <!--
-      - - - - - - - - - - BOTTOM - - - - - - - - - -
-      -->
-      <footer class="band side-padd">
+      <!--    BOTTOM SIDE  -->
+      <footer class="sub-band content">
         <section>
         </section>
       </footer>
-      <!--
-      - - - - - - - - - - / BOTTOM - - - - - - - - - -
-      -->
-
+      <!--   / BOTTOM SIDE   -->
 
     </div>
 

@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: 'Arial';
-  background: #0C325A;
+  font-family: 'Roboto';
 }
 
 /* Utility CSS */
@@ -15,8 +14,40 @@ body {
   display: inline-block;
 }
 
-.side-padd {
+.float-l {
+  float:left;
+}
+
+.float-r {
+  float:right;
+}
+
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+}
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.content {
+  max-width: 1800px;
+  width: 100vw;
   padding: 0 5%;
+  margin: auto;
+}
+
+.submit{
+  background: #7CBB02;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 15px;
 }
 
 /* / Utility CSS */
@@ -26,59 +57,127 @@ body {
   height: 100%;
 }
 
-.navbar {
-  width: 100vw;
-  height: 120px;
-  background: red;
+.fix-band {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  text-transform: uppercase;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1;
 }
 
-.head-content {
-  width: 100%;
-  height: 100vh;
-  background: gray;
+.logo {
 }
 
-.head-content>div:first-child {
-  width: 100%;
-  height: 70%;
-  background: purple;
+.menu {
+  margin: 0 25px;
+}
+
+.menu .inline, .form a  {
+  margin: 0 10px;
+}
+.form>a:nth-child(2) {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.top-band {
+  height: 80vh;
   padding-top: 120px;
+  color: #FFF;
 }
 
-.band {
-  width: 100%;
-  height: 30vh;
+.fix-band, .top-band {
+  background: #0C325A;
+}
+
+.fix-band a, .top-band a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.top-band {
+  height: 80vh;
+  padding-top: 120px;
+  color: #FFF;
+  overflow: hidden;
+}
+
+.top-band {
+  position: relative;
+}
+
+.top-band>.content>img {
+  position: absolute;
+  width: 75%;
+  bottom: 0;
+  right: -50px;
+}
+
+.slogan {
+  width: 550px;
+  font-size: 45px;
+  margin: 40px 0;
+}
+
+.picture {
+  width: 80%;
+}
+
+.picture>img {
+  width: 80%;
+}
+
+.sub-band {
+  width: 100vw;
+  height: 20vh;
   background: #D3D3D3;
 }
 
-.body-content {
-  height: 100vh;
+.sub-band>.content {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+}
+
+.main-band {
   background: #FFF;
 }
 
-.body-content> * {
+.main-band> * {
   height: 50vh;
-  border: solid black;
   text-align: center;
 }
 
-.body-content>:first-child>.box {
+.main-band:nth-last-of-type(2) .box {
   width: calc(100% / 3 - 43px);
-  margin: 0 20px;
-  background: red;
+  height: 350px;
+  margin: 20px;
+  vertical-align: top;
 }
 
-.body-content>:last-child>.box {
+.main-band:nth-last-of-type(2) .box>img {
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.main-band:nth-last-of-type(2) .box>h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: green;
+}
+
+.line {
+  width: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 15px auto;
+}
+
+.main-band:last-of-type .box {
   width: calc(100% / 2 - 3px);
   height: 100%;
   background: red;
-}
-
-.foot-content {
-  height: 100vh;
-  background: #FFF;
 }
