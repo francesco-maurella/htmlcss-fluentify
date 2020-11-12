@@ -37,8 +37,8 @@ body {
 }
 
 .content {
-  max-width: 1800px;
   width: 100vw;
+  max-width: 100%;
   padding: 0 5%;
   margin: auto;
 }
@@ -52,22 +52,14 @@ body {
 
 /* / Utility CSS */
 
-.container {
-  width: 100%;
-  height: 100%;
-}
-
 .fix-band {
-  width: 100%;
+  max-width: 100%;
   height: 90px;
   line-height: 90px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
   z-index: 1;
-}
-
-.logo {
 }
 
 .menu {
@@ -77,6 +69,7 @@ body {
 .menu .inline, .form a  {
   margin: 0 10px;
 }
+
 .form>a:nth-child(2) {
   border: 1px solid #FFF;
   border-radius: 5px;
@@ -131,14 +124,12 @@ body {
 }
 
 .sub-band {
-  width: 100vw;
   height: 20vh;
   background: #D3D3D3;
 }
 
 .sub-band>.content {
   position: relative;
-  width: 100vw;
   height: 20vh;
 }
 
