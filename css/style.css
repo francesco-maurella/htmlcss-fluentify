@@ -62,8 +62,13 @@ body {
   z-index: 1;
 }
 
+.logo {
+  margin: 0 25px;
+}
+
 .menu {
   margin: 0 25px;
+
 }
 
 .menu .inline, .form a  {
@@ -130,7 +135,11 @@ body {
 
 .sub-band>.content {
   position: relative;
-  height: 20vh;
+  height: 100%;
+}
+
+.sub-band>.content h2 {
+  margin-bottom: 15px;
 }
 
 .main-band {
@@ -150,7 +159,7 @@ body {
 }
 
 .main-band:nth-last-of-type(2) .box>img {
-  width: 50%;
+  height: 150px;
   margin-bottom: 15px;
 }
 
